@@ -2,3 +2,10 @@
     background: #f5f6fa;
     padding: 15px 0;
 }
+.logo {
+    width: 35px;
+}
+
+.brand {
+    font-weight: 700;
+}
