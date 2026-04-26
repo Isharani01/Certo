@@ -33,14 +33,23 @@
     font-size: 16px;
 }
 
-.company {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.dropdown {
+    position: relative;
 }
 
-.arrow {
-    font-size: 12px;
+.dropdown-menu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    height: 80px;  
+    background: #fff;
+    border-radius: 6px;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 .btn-signin {
