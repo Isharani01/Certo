@@ -18,3 +18,9 @@
     text-decoration: none;
     color: #000;
 }
+.btn-signin {
+    padding: 8px 20px;
+    border-radius: 20px;
+    background: purple;
+    color: white;
+}
