@@ -114,6 +114,30 @@
   margin-bottom: 2rem;
   line-height: 1.7;
 }
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary-custom {
+  display: inline-block;
+  padding: 15px 35px;
+  background: #FFC247;
+  color: #02033B;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-outline-custom {
+  display: inline-block;
+  padding: 15px 35px;
+  border: 2px solid #02033B;
+  color: #02033B;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+}
 /* ================= CTA SECTION ================= */
 .cta-section{
   background:linear-gradient(180deg,#2925CC,#4B48E5);
