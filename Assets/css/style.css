@@ -151,6 +151,10 @@
   height: 100%;
   object-fit: cover;
 }
+.blue-bg-img {
+  width: 100%;
+  display: block;
+}
 /* ================= CTA SECTION ================= */
 .cta-section{
   background:linear-gradient(180deg,#2925CC,#4B48E5);
