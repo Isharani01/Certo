@@ -99,6 +99,21 @@
   flex: 1;
   max-width: 520px;
 }
+.hero-text h1 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1.15;
+  color: #02033B;
+  margin-bottom: 1.2rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #02033B;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
 /* ================= CTA SECTION ================= */
 .cta-section{
   background:linear-gradient(180deg,#2925CC,#4B48E5);
