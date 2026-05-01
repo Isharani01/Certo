@@ -143,6 +143,14 @@
   width: 100%;
   max-width: 600px;
 }
+.bg-img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* ================= CTA SECTION ================= */
 .cta-section{
   background:linear-gradient(180deg,#2925CC,#4B48E5);
