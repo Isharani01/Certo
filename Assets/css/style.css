@@ -138,6 +138,11 @@
   font-weight: 700;
   text-decoration: none;
 }
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
 /* ================= CTA SECTION ================= */
 .cta-section{
   background:linear-gradient(180deg,#2925CC,#4B48E5);
