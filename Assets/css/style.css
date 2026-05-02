@@ -357,8 +357,6 @@
 .stars svg {
     fill: #FDB235;
 }
-
-
 /* FEATURED SECTION */
 .featured-row {
     display: flex;
@@ -494,6 +492,8 @@
     background-color: #02033B;
     color: #fff;
 }
+
+
 
 
 
