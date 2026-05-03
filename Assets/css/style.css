@@ -568,3 +568,32 @@
   }
 
 }
+/* Base Section Styling */
+.features-section {
+    background: linear-gradient(to bottom, #F3F8FF, #E7EFFA);
+    padding: 84px 0;
+    font-family: 'Inter', sans-serif;
+    color: #02033B;
+}
+
+/* Title Styling */
+.features-title {
+    font-size: 36px;
+    font-weight: 800; /* Extra Bold */
+    line-height: 45px;
+    letter-spacing: -0.72px;
+    margin-bottom: 60px;
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* White Card Container */
+.features-card {
+    background-color: #FFFFFF;
+    border-radius: 48px;
+    padding: 72px;
+    max-width: 840px;
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.1);
+}
+
