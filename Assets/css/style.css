@@ -1,3 +1,4 @@
+
 /* ================= HEADER ================= */
 .header {
   background: #F3F8FF;
@@ -6,6 +7,8 @@
   display: flex;
   align-items: center;
 }
+
+/* NAV LINKS */
 .nav-links {
   list-style: none;
   display: flex;
@@ -45,9 +48,12 @@
   height: 14px;
   transition: 0.3s;
 }
+
 .company-link:hover svg {
   transform: rotate(180deg);
 }
+
+/* RIGHT BUTTON */
 .btn-signin {
   display: inline-flex;
   align-items: center;
@@ -68,32 +74,47 @@
 }
 /* ================= HERO SECTION ================= */
 .hero-section {
-  background: 
-    linear-gradient(to right, transparent 60%, #4335DE 40%),
-    radial-gradient(circle at 20% 40%, #FFFFFF 0%, #E7EFFA 100%);
-    
-  padding-bottom: 0 !important;
-  align-items: stretch;
-  display: flex;
- 
+  background-color:#E7EFFA;
+  padding:0;
   margin: 0;
+
   position: relative; 
   overflow: hidden; 
   z-index: 1;
   min-height: calc(100vh - 102px);
-  
-  align-items: center;
+  display: flex;
+  align-items: stretch;
 }
+.hero-ellipse {
+  position: absolute;
+  width: 1770px; 
+  height: 1770px;
+ top: -650px; 
+  left: -550px;
+  background: radial-gradient(
+    50% 50% at 50% 50%, 
+    #FFFFFF 0%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+  
+  border-radius: 50%;
+  z-index: -1; 
+  pointer-events: none;
+}
+
+/* ================= HERO CONTAINER ================= */
 .hero-container {
+  /* Relative position zaroori hai taake ye ellipse ke upar layer ho */
   position: relative; 
   z-index: 2; 
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   padding-left: 120px;
   padding-right: 0;
   gap: 20px;
+  width: 100%;
 }
 
 /* ================= LEFT CONTENT ================= */
@@ -122,6 +143,7 @@
 .hero-buttons {
   display: flex;
   gap: 20px;
+
 }
 
 .btn-primary-custom {
@@ -161,6 +183,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 60px;
 }
 
 .image-wrapper {
@@ -193,6 +216,8 @@
   z-index: 10;
   filter: drop-shadow(0 20px 50px rgba(0,0,0,0.3));
 }
+
+/* ================= RESPONSIVE ================= */
 @media (max-width: 991px) {
   .hero-section {
     min-height: auto;
@@ -217,6 +242,8 @@
     justify-content: center;
     margin-top: 50px;
   }
+
+  /* Mobile par ellipse ka size adjust karein */
   .hero-ellipse {
     width: 1000px;
     height: 1000px;
@@ -329,7 +356,7 @@
   margin-bottom: 20px;
 
   letter-spacing: -1px;
-  width: 350px;
+  max-width: 400px;
 
 }.about-title span {
   display: block;
@@ -787,6 +814,51 @@
         max-width: 280px;
     }
 }
+/* ----------BLUE SECTION------------*/
+.blue-section {
+  background-color: rgba(41, 37, 204, 1);
+  font-family: 'Inter', sans-serif;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+.blue-section .inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blue-section h2 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  white-space: nowrap;
+  text-align: center;
+  margin: 0 0 2.4rem 0;
+  line-height: 1.2;
+}
+.blue-section .subtext {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.blue-section .btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+/* Responsive Fix */
+@media (max-width: 1100px) {
+    .extra-section .row {
+        flex-wrap: wrap !important;
+        gap: 20px !important;
+    }
+    .extra-section .container {
+        padding: 0 20px !important;
+    }}
 /* ---------------LATEST INSIGHTS SECTION------------- */
 .insights-section {
     background-color: #F3F8FF;
