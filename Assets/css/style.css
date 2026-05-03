@@ -6,8 +6,6 @@
   display: flex;
   align-items: center;
 }
-
-/* NAV LINKS */
 .nav-links {
   list-style: none;
   display: flex;
@@ -23,8 +21,6 @@
   font-weight: 600;
   font-size: 16px;
 }
-
-/* LEFT LOGO */
 .nav-left {
   display: flex;
   align-items: center;
@@ -35,8 +31,6 @@
   width: 157px;
   height: 54PX;
 }
-
-/* COMPANY LINK + ICON */
 .company-link {
   display: flex;
   align-items: center;
@@ -51,13 +45,9 @@
   height: 14px;
   transition: 0.3s;
 }
-
-/* optional hover animation */
 .company-link:hover svg {
   transform: rotate(180deg);
 }
-
-/* RIGHT BUTTON */
 .btn-signin {
   display: inline-flex;
   align-items: center;
@@ -77,8 +67,6 @@
   background-color: #3529b5;
 }
 /* ================= HERO SECTION ================= */
-
-/* ================= HERO SECTION LAYOUT ================= */
 .hero-section {
   background: 
     linear-gradient(to right, transparent 60%, #4335DE 40%),
@@ -89,22 +77,14 @@
   display: flex;
  
   margin: 0;
-  
-  /* IMPORTANT: Ellipse ko background layer mein rakhne ke liye */
   position: relative; 
   overflow: hidden; 
   z-index: 1;
-
-  /* Screen height adjustment */
   min-height: calc(100vh - 102px);
   
   align-items: center;
 }
-
-
-/* ================= HERO CONTAINER ================= */
 .hero-container {
-  /* Relative position zaroori hai taake ye ellipse ke upar layer ho */
   position: relative; 
   z-index: 2; 
   max-width: 1440px;
@@ -213,8 +193,6 @@
   z-index: 10;
   filter: drop-shadow(0 20px 50px rgba(0,0,0,0.3));
 }
-
-/* ================= RESPONSIVE ================= */
 @media (max-width: 991px) {
   .hero-section {
     min-height: auto;
@@ -239,8 +217,6 @@
     justify-content: center;
     margin-top: 50px;
   }
-
-  /* Mobile par ellipse ka size adjust karein */
   .hero-ellipse {
     width: 1000px;
     height: 1000px;
@@ -248,7 +224,6 @@
     left: -300px;
   }
 }
-/* ================= testimonial section================= */
 /* ================= TESTIMONIAL SECTION ================= */
 
 .testimonials {
@@ -256,15 +231,11 @@
     padding: 80px 0;
     overflow: hidden;
 }
-
-/* Container */
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
 }
-
-/* Title */
 .test-title {
     font-size: 36px;
     font-weight: 800;
@@ -272,14 +243,12 @@
     margin-bottom: 50px;
     line-height: 1.2;
 }
-
-/* 🔥 SLIDER WRAPPER (FIXED ONLY) */
 .slider-wrapper {
     width: 100%;
-    overflow-x: auto;   /* changed */
-    scroll-snap-type: x mandatory; /* added */
+    overflow-x: auto;   
+    scroll-snap-type: x mandatory; 
     -webkit-overflow-scrolling: touch;
-    padding: 0 5%; /* kept same for peek */
+    padding: 0 5%; 
 }
 
 /* hide scrollbar */
@@ -338,7 +307,159 @@
 .stars svg {
     fill: #FDB235;
 }
-/* FEATURED SECTION */
+
+/* ===== ABOUT SECTION START ===== */
+.about-section {
+  background: #FFFFFF;
+  padding: 80px 0;
+  overflow: visible;
+}
+.about-title {
+
+  font-size: 38px; 
+
+  font-family: 'Inter', sans-serif;
+
+  font-weight: 800;
+
+  line-height: 1.1; 
+
+  color: #02033B;
+
+  margin-bottom: 20px;
+
+  letter-spacing: -1px;
+  width: 350px;
+
+}.about-title span {
+  display: block;
+  
+}
+.about-text {
+
+  font-size: 1rem;
+
+  color: #333333;
+
+  line-height: 1.6;
+
+  margin-bottom: 25px; 
+
+  max-width: 440px;
+
+}
+.about-btns {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px; 
+
+  align-items: flex-start;
+
+}
+.btn-primary-custom, .btn-outline-custom {
+
+    padding: 12px 25px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    font-size: 15px;
+
+    display: inline-block;
+
+}
+
+.about-image-wrapper {
+
+  position: relative;
+
+  width: 100%;
+
+  max-width: 500px; 
+
+  aspect-ratio: 1 / 1;
+
+}
+
+.frame-behind {
+
+  position: absolute;
+
+  top: -15px;    
+
+  right: -15px;
+
+  width: 100%;
+
+  height: 100%;
+
+  z-index: 1;
+
+  object-fit: contain;
+
+}
+
+/* --- MAIN GIRL IMAGE --- */
+
+.main-image {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 100%;
+
+  z-index: 2;
+
+  object-fit: cover;
+
+  display: block;
+
+}
+
+/* Responsive Fix */
+
+@media (max-width: 991px) {
+
+  .about-image-wrapper {
+
+    max-width: 380px;
+
+    margin: 50px auto 0;
+
+  }
+
+  .about-title {
+
+    text-align: center;
+
+    font-size: 30px;
+
+  }
+
+  .about-text {
+
+    text-align: center;
+
+    margin: 0 auto 20px;
+
+  }
+
+  .about-btns {
+
+    align-items: center;
+
+  }
+
+}
+
+/* ---------FEATURED SECTION -------*/
 .featured-row {
     display: flex;
     align-items: center;
@@ -384,190 +505,7 @@
     }
 }
 
-/*about*/
-.about-section {
 
-  background: #FFFFFF;
-
-  padding: 80px 0;
-
-  overflow: visible;
-
-}
-
-
-
-/* Heading Fix */
-
-.about-title {
-
-  font-size: 38px; /* Adjusted size */
-
-  font-family: 'Inter', sans-serif;
-
-  font-weight: 800;
-
-  line-height: 1.1; /* Tight line height like original */
-
-  color: #02033B;
-
-  margin-bottom: 20px;
-
-  letter-spacing: -1px;
-  width: 350px;
-
-}.about-title span {
-  display: block;
-  
-}
-
-
-
-.about-text {
-
-  font-size: 1rem;
-
-  color: #333333;
-
-  line-height: 1.6;
-
-  margin-bottom: 25px; /* Reduced to bring buttons up */
-
-  max-width: 440px;
-
-}
-
-
-
-/* Buttons Fix */
-
-.about-btns {
-
-  display: flex;
-
-  flex-direction: column; /* Stacked like original design */
-
-  gap: 12px; /* Small gap to keep them tight */
-
-  align-items: flex-start;
-
-}
-
-
-
-.btn-primary-custom, .btn-outline-custom {
-
-    padding: 12px 25px;
-
-    border-radius: 50px;
-
-    text-decoration: none;
-
-    font-weight: 700;
-
-    font-size: 15px;
-
-    display: inline-block;
-
-}
-
-
-
-/* --- IMAGE WRAPPER (Made it slightly larger) --- */
-
-.about-image-wrapper {
-
-  position: relative;
-
-  width: 100%;
-
-  max-width: 500px; /* Increased size */
-
-  aspect-ratio: 1 / 1;
-
-}
-
-
-
-/* --- YELLOW FRAME (More offset to the left and top) --- */
-
-.frame-behind {
-
-  position: absolute;
-
-  /* Left aur Top se zyada bahar nikala hai */
-
-  top: -15px;    
-
-  right: -15px;
-
-  width: 100%;
-
-  height: 100%;
-
-  z-index: 1;
-
-  object-fit: contain;
-
-}
-
-
-
-/* --- MAIN GIRL IMAGE --- */
-
-.main-image {
-
-  position: relative;
-
-  width: 100%;
-
-  height: 100%;
-
-  z-index: 2;
-
-  object-fit: cover;
-
-  display: block;
-
-}
-
-
-
-/* Responsive Fix */
-
-@media (max-width: 991px) {
-
-  .about-image-wrapper {
-
-    max-width: 380px;
-
-    margin: 50px auto 0;
-
-  }
-
-  .about-title {
-
-    text-align: center;
-
-    font-size: 30px;
-
-  }
-
-  .about-text {
-
-    text-align: center;
-
-    margin: 0 auto 20px;
-
-  }
-
-  .about-btns {
-
-    align-items: center;
-
-  }
-
-}
 /* Base Section Styling */
 .features-section {
     background: linear-gradient(to bottom, #F3F8FF, #E7EFFA);
@@ -656,7 +594,7 @@
     background-color: #02033B;
     color: #fff;
 }
-/* 1. Main Section & Container (image_89441a) */
+/* ===== EXTRA SECTION START ===== */
 .extra-section {
     padding: 84px 0 !important;
     background-color: #ffffff;
@@ -664,17 +602,16 @@
 
 .extra-section .container {
     max-width: 1440px !important;
-    padding: 0 264px !important; /* Total side padding from Figma */
+    padding: 0 264px !important;
     margin: 0 auto !important;
 }
 
-/* 2. Row: Side-by-side alignment (image_8943d9) */
 .extra-section .row {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
     justify-content: center !important;
-    gap: 72px !important; /* Gap 72px from image_8943d9 */
+    gap: 72px !important; 
     margin: 0 !important;
 }
 
@@ -683,9 +620,9 @@
     flex: 0 0 auto !important;
     padding: 0 !important;
 }
-/* 3. CARDS: Common Styles */
+
 .story-card, .help-card {
-    height: 296px !important; /* Fixed Height for both */
+    height: 296px !important; 
     border-radius: 48px !important;
     padding: 48px !important;
     display: flex !important;
@@ -694,23 +631,16 @@
     box-sizing: border-box !important;
 }
 
-/* 4. WIDTH DIFFERENTIATION (The Fix) */
-
-/* Left Card (Large) - image_894058 */
 .story-card {
     width: 460px !important; 
     background: linear-gradient(180deg, #F7C95F 0%, #FDB235 100%) !important;
     border: none !important;
 }
-
-/* Right Card (Small) - image_8943d9 */
 .help-card {
     width: 308px !important; /* Exact width from your Figma screenshot */
     background-color: #ffffff !important;
     border: 1px solid #E5E7EB !important;
 }
-
-/* 5. Typography */
 .story-card h5, .help-card h5 {
     font-size: 24px;
     font-weight: 800;
@@ -725,7 +655,6 @@
     margin-bottom: 30px;
     color: #02033b;
 }
-/* 6. BUTTONS (image_893bde) */
 .btn-story, .btn-help {
     font-weight: 700;
     text-decoration: none;
@@ -758,10 +687,7 @@
 /* ================= FINAL CTA SECTION ================= */
 
 .cta-section {
-    /* Background Gradient (image_88c421) */
     background: linear-gradient(180deg, #2925CC 0%, #4B48E5 100%) !important;
-    
-    /* Layout Padding (image_88c421) */
     padding: 84px 0 !important; 
     text-align: center;
     color: #FFFFFF;
@@ -769,13 +695,10 @@
 }
 
 .cta-section .container {
-    /* Inner Width (image_88c3db) */
     max-width: 750px !important;
     margin: 0 auto;
     padding: 0 15px;
 }
-
-/* Heading Specs (image_88c0db) */
 .cta-section h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
@@ -785,42 +708,30 @@
     margin-bottom: 16px;
     color: #FFFFFF;
 }
-
-/* Subtext (image_88c3db) */
 .cta-section p {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     margin-bottom: 40px;
     color: #FFFFFF;
 }
-
-/* Button Layout Container */
 .cta-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
 }
-
-/* YELLOW BUTTON: Exact Specs & Alignment Fix (image_88bfff) */
 .btn-yellow {
     background-color: #FFC247 !important;
     color: #02033B !important;
-    
-    /* Precise Dimensions */
     width: 268.66px !important;
     height: 54.5px !important;
     border-radius: 42px !important;
-    
-    /* VERTICAL ALIGNMENT FIX */
     display: inline-flex !important;
-    align-items: center !important;      /* Text aur arrow ko vertical center karne ke liye */
-    justify-content: center !important;   /* Horizontal centering */
-    gap: 12px !important;                /* Text aur arrow ke darmiyan gap */
-    
-    /* Resetting Offsets */
-    padding: 0 20px !important;          /* Side padding only to prevent vertical shift */
-    line-height: 1 !important;           /* Line height reset for centering */
+    align-items: center !important;      
+    justify-content: center !important;   
+    gap: 12px !important;                
+    padding: 0 20px !important;         
+    line-height: 1 !important;           
     
     /* Typography */
     font-family: 'Inter', sans-serif;
@@ -841,8 +752,6 @@
     width: 268.66px !important;
     height: 54.5px !important;
     border-radius: 42px !important;
-    
-    /* Centering Fix */
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -878,8 +787,7 @@
         max-width: 280px;
     }
 }
-/* LATEST INSIGHTS SECTION */
-/* Section Container */
+/* ---------------LATEST INSIGHTS SECTION------------- */
 .insights-section {
     background-color: #F3F8FF;
     padding: 84px 0;
@@ -907,14 +815,14 @@
     display: flex;
     gap: 32px;                 
     justify-content: center;
-    align-items: stretch;      /* Sab cards ki height barabar karne ke liye */
+    align-items: stretch;      
     margin-bottom: 40px;
 }
 
 /* Card Styling */
 .insight-card {
     background-color: #FFFFFF;
-    width: 272px;               /* 0.5 inch reduced width */
+    width: 272px;               
     height: auto;               
     border-radius: 40px;        
     overflow: hidden;
@@ -926,13 +834,11 @@
 
 .insight-card img {
     width: 100%;
-    height: 170px;             /* Length halki si barhai (Minute increase) */
+    height: 170px;            
     object-fit: cover;
 }
 
-/* Text Content Area */
 .card-body {
-    /* Bottom padding ko 36px se barha kar 48px kiya taake length behtar lage */
     padding: 24px 22px 48px 22px; 
     flex-grow: 1;                 
     display: flex;
@@ -957,7 +863,6 @@
     margin: 0;
 }
 
-/* Tag (Expertise/Guides) */
 .tag {
     position: absolute;
     top: 18px;
@@ -988,7 +893,7 @@
 .btn-view:hover {
     background-color: #e6af3f;
 }
-/* --- RESET & BASE --- */
+
 * {
   margin: 0;
   padding: 0;
@@ -1011,7 +916,6 @@
 /* --- GRID LAYOUT --- */
 .footer-grid {
   display: grid;
-  /* Defining 3 distinct columns based on image_1974c0.png */
   grid-template-columns: 1fr 0.6fr 1.2fr; 
   gap: 40px;
   align-items: start;
@@ -1114,13 +1018,13 @@
 .interaction-section {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Aligns to right edge like image_1974c0.png */
+  align-items: flex-end; 
 }
 
 .newsletter-card {
   background-color: #FFC247;
   padding: 40px;
-  border-radius: 50px; /* High curvature from design */
+  border-radius: 50px;
   color: #02033B;
   width: 100%;
   max-width: 440px;
@@ -1175,7 +1079,7 @@
   width: 270px;
   height: 125px;
   border-radius: 18px;
-  margin-top: 50px; /* Space from newsletter card */
+  margin-top: 50px; 
 }
 
 /* --- BOTTOM TRADEMARKS --- */
