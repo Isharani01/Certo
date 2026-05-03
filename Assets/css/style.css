@@ -755,6 +755,130 @@
         padding: 0 20px !important;
     }
 }
+/* ================= FINAL CTA SECTION ================= */
+
+.cta-section {
+    /* Background Gradient (image_88c421) */
+    background: linear-gradient(180deg, #2925CC 0%, #4B48E5 100%) !important;
+    
+    /* Layout Padding (image_88c421) */
+    padding: 84px 0 !important; 
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.cta-section .container {
+    /* Inner Width (image_88c3db) */
+    max-width: 750px !important;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Heading Specs (image_88c0db) */
+.cta-section h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    letter-spacing: -0.72px;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+
+/* Subtext (image_88c3db) */
+.cta-section p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+
+/* Button Layout Container */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+/* YELLOW BUTTON: Exact Specs & Alignment Fix (image_88bfff) */
+.btn-yellow {
+    background-color: #FFC247 !important;
+    color: #02033B !important;
+    
+    /* Precise Dimensions */
+    width: 268.66px !important;
+    height: 54.5px !important;
+    border-radius: 42px !important;
+    
+    /* VERTICAL ALIGNMENT FIX */
+    display: inline-flex !important;
+    align-items: center !important;      /* Text aur arrow ko vertical center karne ke liye */
+    justify-content: center !important;   /* Horizontal centering */
+    gap: 12px !important;                /* Text aur arrow ke darmiyan gap */
+    
+    /* Resetting Offsets */
+    padding: 0 20px !important;          /* Side padding only to prevent vertical shift */
+    line-height: 1 !important;           /* Line height reset for centering */
+    
+    /* Typography */
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    border: none !important;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* OUTLINE BUTTON: Symmetrical to Yellow Button */
+.btn-outline {
+    background-color: transparent !important;
+    color: #FFFFFF !important;
+    border: 2px solid #FFFFFF !important;
+    
+    /* Matching Dimensions */
+    width: 268.66px !important;
+    height: 54.5px !important;
+    border-radius: 42px !important;
+    
+    /* Centering Fix */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+    
+    /* Typography */
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 32px !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover States */
+.btn-yellow:hover {
+    background-color: #fdb92d !important;
+    transform: translateY(-2px);
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .btn-yellow, .btn-outline {
+        width: 100% !important;
+        max-width: 280px;
+    }
+}
+
 
 
 
