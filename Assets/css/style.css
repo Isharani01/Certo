@@ -385,3 +385,186 @@
 }
 
 /*about*/
+.about-section {
+
+  background: #FFFFFF;
+
+  padding: 80px 0;
+
+  overflow: visible;
+
+}
+
+
+
+/* Heading Fix */
+
+.about-title {
+
+  font-size: 38px; /* Adjusted size */
+
+  font-family: 'Inter', sans-serif;
+
+  font-weight: 800;
+
+  line-height: 1.1; /* Tight line height like original */
+
+  color: #02033B;
+
+  margin-bottom: 20px;
+
+  letter-spacing: -1px;
+  width: 350px;
+
+}.about-title span {
+  display: block;
+  
+}
+
+
+
+.about-text {
+
+  font-size: 1rem;
+
+  color: #333333;
+
+  line-height: 1.6;
+
+  margin-bottom: 25px; /* Reduced to bring buttons up */
+
+  max-width: 440px;
+
+}
+
+
+
+/* Buttons Fix */
+
+.about-btns {
+
+  display: flex;
+
+  flex-direction: column; /* Stacked like original design */
+
+  gap: 12px; /* Small gap to keep them tight */
+
+  align-items: flex-start;
+
+}
+
+
+
+.btn-primary-custom, .btn-outline-custom {
+
+    padding: 12px 25px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    font-size: 15px;
+
+    display: inline-block;
+
+}
+
+
+
+/* --- IMAGE WRAPPER (Made it slightly larger) --- */
+
+.about-image-wrapper {
+
+  position: relative;
+
+  width: 100%;
+
+  max-width: 500px; /* Increased size */
+
+  aspect-ratio: 1 / 1;
+
+}
+
+
+
+/* --- YELLOW FRAME (More offset to the left and top) --- */
+
+.frame-behind {
+
+  position: absolute;
+
+  /* Left aur Top se zyada bahar nikala hai */
+
+  top: -15px;    
+
+  right: -15px;
+
+  width: 100%;
+
+  height: 100%;
+
+  z-index: 1;
+
+  object-fit: contain;
+
+}
+
+
+
+/* --- MAIN GIRL IMAGE --- */
+
+.main-image {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 100%;
+
+  z-index: 2;
+
+  object-fit: cover;
+
+  display: block;
+
+}
+
+
+
+/* Responsive Fix */
+
+@media (max-width: 991px) {
+
+  .about-image-wrapper {
+
+    max-width: 380px;
+
+    margin: 50px auto 0;
+
+  }
+
+  .about-title {
+
+    text-align: center;
+
+    font-size: 30px;
+
+  }
+
+  .about-text {
+
+    text-align: center;
+
+    margin: 0 auto 20px;
+
+  }
+
+  .about-btns {
+
+    align-items: center;
+
+  }
+
+}
