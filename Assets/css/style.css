@@ -596,4 +596,44 @@
     max-width: 840px;
     box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.1);
 }
+/* Feature Item Styling */
+.feature-item {
+    padding: 10px;
+    height: 100%;
+}
+
+.feature-item img {
+    width: 77px;
+    height: 72px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.feature-item h6 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #02033B;
+    opacity: 0.9; /* Subtle text fade */
+}
+
+/* Button Styling */
+.btn-yellow {
+    background-color: #FFC247;
+    color: #02033B;
+    padding: 12px 24px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
 
