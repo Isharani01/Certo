@@ -656,6 +656,33 @@
     background-color: #02033B;
     color: #fff;
 }
+/* 1. Main Section & Container (image_89441a) */
+.extra-section {
+    padding: 84px 0 !important;
+    background-color: #ffffff;
+}
+
+.extra-section .container {
+    max-width: 1440px !important;
+    padding: 0 264px !important; /* Total side padding from Figma */
+    margin: 0 auto !important;
+}
+
+/* 2. Row: Side-by-side alignment (image_8943d9) */
+.extra-section .row {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    gap: 72px !important; /* Gap 72px from image_8943d9 */
+    margin: 0 !important;
+}
+
+.extra-section .col-lg-6 {
+    width: auto !important;
+    flex: 0 0 auto !important;
+    padding: 0 !important;
+}
 
 
 
