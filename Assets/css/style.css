@@ -988,6 +988,219 @@
 .btn-view:hover {
     background-color: #e6af3f;
 }
+/* --- RESET & BASE --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #02033B;
+  color: #FFFFFF;
+  padding: 100px 0 60px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/* --- GRID LAYOUT --- */
+.footer-grid {
+  display: grid;
+  /* Defining 3 distinct columns based on image_1974c0.png */
+  grid-template-columns: 1fr 0.6fr 1.2fr; 
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 80px;
+}
+
+/* --- COLUMN 1: BRAND --- */
+.footer-title {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 35px;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 45px;
+}
+
+.social-link {
+  background-color: #FFFFFF;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.social-link svg {
+  fill: #02033B;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+}
+
+.meta-links {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.meta-links a {
+  color: #FFFFFF;
+  font-size: 11px;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.legal-info p {
+  font-size: 11px;
+  line-height: 1.8;
+  opacity: 0.7;
+}
+
+.legal-info a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* --- COLUMN 2: CERTO LINKS --- */
+.nav-title {
+  font-size: 32px;
+  font-weight: 800;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  width: fit-content;
+  min-width: 160px;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li::before {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: #FFC247;
+  margin-right: 15px;
+}
+
+.nav-list a {
+  color: #FFC247;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+/* --- COLUMN 3: INTERACTION (Newsletter + Box) --- */
+.interaction-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligns to right edge like image_1974c0.png */
+}
+
+.newsletter-card {
+  background-color: #FFC247;
+  padding: 40px;
+  border-radius: 50px; /* High curvature from design */
+  color: #02033B;
+  width: 100%;
+  max-width: 440px;
+}
+
+.newsletter-card h4 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.newsletter-card p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.newsletter-form {
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.newsletter-form input {
+  border: none;
+  background: transparent;
+  padding: 12px 20px;
+  flex: 1;
+  outline: none;
+  font-size: 14px;
+}
+
+.newsletter-form button {
+  background-color: #02033B;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #05075a;
+}
+
+.decorative-white-box {
+  background-color: #FFFFFF;
+  width: 270px;
+  height: 125px;
+  border-radius: 18px;
+  margin-top: 50px; /* Space from newsletter card */
+}
+
+/* --- BOTTOM TRADEMARKS --- */
+.footer-trademarks {
+  font-size: 11px;
+  line-height: 1.6;
+  opacity: 0.5;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .interaction-section {
+    align-items: flex-start;
+  }
+  .newsletter-card {
+    max-width: 100%;
+  }
+}
+
 
 
 
