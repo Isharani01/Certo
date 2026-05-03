@@ -878,6 +878,119 @@
         max-width: 280px;
     }
 }
+/* LATEST INSIGHTS SECTION */
+/* Section Container */
+.insights-section {
+    background-color: #F3F8FF;
+    padding: 84px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1056px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.insights-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #02033B;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Grid Layout */
+.insights-grid {
+    display: flex;
+    gap: 32px;                 
+    justify-content: center;
+    align-items: stretch;      /* Sab cards ki height barabar karne ke liye */
+    margin-bottom: 40px;
+}
+
+/* Card Styling */
+.insight-card {
+    background-color: #FFFFFF;
+    width: 272px;               /* 0.5 inch reduced width */
+    height: auto;               
+    border-radius: 40px;        
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.insight-card img {
+    width: 100%;
+    height: 170px;             /* Length halki si barhai (Minute increase) */
+    object-fit: cover;
+}
+
+/* Text Content Area */
+.card-body {
+    /* Bottom padding ko 36px se barha kar 48px kiya taake length behtar lage */
+    padding: 24px 22px 48px 22px; 
+    flex-grow: 1;                 
+    display: flex;
+    flex-direction: column;
+}
+
+.insight-card h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 21px;           
+    line-height: 28px;
+    color: #02033B;
+    margin-bottom: 12px;
+}
+
+.insight-card p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;           
+    line-height: 23px;
+    color: #02033B;
+    margin: 0;
+}
+
+/* Tag (Expertise/Guides) */
+.tag {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background-color: #F3F8FF; 
+    padding: 10px 18px;
+    border-radius: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #02033B;
+}
+
+/* Bottom Button */
+.text-center { text-align: center; }
+.btn-view {
+    display: inline-block;
+    background-color: #FFC247;
+    color: #02033B;
+    padding: 14px 36px;
+    border-radius: 48px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.btn-view:hover {
+    background-color: #e6af3f;
+}
+
+
+
 
 
 
