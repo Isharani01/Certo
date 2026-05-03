@@ -725,6 +725,27 @@
     margin-bottom: 30px;
     color: #02033b;
 }
+/* 6. BUTTONS (image_893bde) */
+.btn-story, .btn-help {
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 42px !important;
+    display: inline-block;
+    width: fit-content;
+}
+
+.btn-story {
+    background-color: #4335DE !important;
+    color: white !important;
+    padding: 16px 44px 16px 20px !important;
+}
+
+.btn-help {
+    border: 2px solid #02033b !important;
+    color: #02033b !important;
+    padding: 14px 28px !important;
+}
+
 
 
 
