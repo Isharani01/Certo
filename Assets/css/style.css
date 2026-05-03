@@ -1,76 +1,116 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 /* ================= HEADER ================= */
 .header {
-  background: #F3F8FF;
-  height: 102px;
-  padding: 0 120px;
-  display: flex;
-  align-items: center;
+    background: #F3F8FF;
+    height: 102px;
+    padding: 0 120px; /* Sides ki space yahan se control hoti hai */
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo left par, baqi sab right par */
+    width: 100%;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 157px;
+    height: 54px;
+}
+
+/* RIGHT GROUP: Links aur Button ko jorne wala container */
+.nav-right-content {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Links aur Sign In button ke darmiyan ka gap */
 }
 
 /* NAV LINKS */
 .nav-links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Har link (iPhone, Android, etc.) ke darmiyan gap */
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #0b132b;
-  font-weight: 600;
-  font-size: 16px;
-}
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    text-decoration: none;
+    color: #0b132b;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s ease;
 }
 
-.logo {
-  width: 157px;
-  height: 54PX;
-}
 .company-link {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: #0b132b;
-  text-decoration: none;
-  font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .company-link svg {
-  width: 14px;
-  height: 14px;
-  transition: 0.3s;
+    width: 14px;
+    height: 14px;
+    transition: 0.3s ease;
 }
 
 .company-link:hover svg {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
-/* RIGHT BUTTON */
+/* SIGN IN BUTTON */
 .btn-signin {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #4335DE;
-  color: #FFFFFF;
-  min-width: 120px;
-  height: 46px;
-  padding: 0 25px;
-  border-radius: 30px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4335DE;
+    color: #FFFFFF;
+    min-width: 120px;
+    height: 46px;
+    padding: 0 25px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s ease;
 }
 
 .btn-signin:hover {
-  background-color: #3529b5;
+    background-color: #3529b5;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1200px) {
+    .header {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-links {
+        display: none; /* Mobile par links chupanay ke liye */
+    }
+    .nav-right-content {
+        gap: 20px;
+    }
 }
 /* ================= HERO SECTION ================= */
 .hero-section {
