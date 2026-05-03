@@ -683,6 +683,49 @@
     flex: 0 0 auto !important;
     padding: 0 !important;
 }
+/* 3. CARDS: Common Styles */
+.story-card, .help-card {
+    height: 296px !important; /* Fixed Height for both */
+    border-radius: 48px !important;
+    padding: 48px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+}
+
+/* 4. WIDTH DIFFERENTIATION (The Fix) */
+
+/* Left Card (Large) - image_894058 */
+.story-card {
+    width: 460px !important; 
+    background: linear-gradient(180deg, #F7C95F 0%, #FDB235 100%) !important;
+    border: none !important;
+}
+
+/* Right Card (Small) - image_8943d9 */
+.help-card {
+    width: 308px !important; /* Exact width from your Figma screenshot */
+    background-color: #ffffff !important;
+    border: 1px solid #E5E7EB !important;
+}
+
+/* 5. Typography */
+.story-card h5, .help-card h5 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #02033b;
+    white-space: nowrap;
+}
+
+.story-card p, .help-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #02033b;
+}
+
 
 
 
