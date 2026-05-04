@@ -511,6 +511,7 @@ body {
 .featured-row {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 40px;
     margin-top: 50px;
     padding: 0 20px;
@@ -692,7 +693,7 @@ body {
 .help-card {
     width: 308px !important; /* Exact width from your Figma screenshot */
     background-color: #ffffff !important;
-    border: 1px solid #E5E7EB !important;
+    /* border: 1px solid #E5E7EB !important; */
 }
 .story-card h5, .help-card h5 {
     font-size: 24px;
