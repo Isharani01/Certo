@@ -13,7 +13,7 @@ body {
 .header {
     background: #F3F8FF;
     height: 102px;
-    padding: 0 120px; /* Sides ki space yahan se control hoti hai */
+    padding: 0 120px; 
     display: flex;
     align-items: center;
     width: 100%;
@@ -22,7 +22,7 @@ body {
 .nav-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Logo left par, baqi sab right par */
+    justify-content: space-between; 
     width: 100%;
 }
 
@@ -36,11 +36,10 @@ body {
     height: 54px;
 }
 
-/* RIGHT GROUP: Links aur Button ko jorne wala container */
 .nav-right-content {
     display: flex;
     align-items: center;
-    gap: 50px; /* Links aur Sign In button ke darmiyan ka gap */
+    gap: 50px;
 }
 
 /* NAV LINKS */
@@ -48,7 +47,7 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 40px; /* Har link (iPhone, Android, etc.) ke darmiyan gap */
+    gap: 40px; 
     margin: 0;
     padding: 0;
 }
@@ -106,7 +105,7 @@ body {
 
 @media (max-width: 991px) {
     .nav-links {
-        display: none; /* Mobile par links chupanay ke liye */
+        display: none; 
     }
     .nav-right-content {
         gap: 20px;
@@ -454,24 +453,6 @@ body {
 
 }
 
-.frame-behind {
-
-  position: absolute;
-
-  top: -15px;    
-
-  right: -15px;
-
-  width: 100%;
-
-  height: 100%;
-
-  z-index: 1;
-
-  object-fit: contain;
-
-}
-
 /* --- MAIN GIRL IMAGE --- */
 
 .main-image {
@@ -501,7 +482,7 @@ body {
     margin: 50px auto 0;
 
   }
-
+/*------ABOUT SECTION end------*/
   .about-title {
 
     text-align: center;
@@ -627,40 +608,45 @@ body {
     color: #02033B;
     opacity: 0.9; /* Subtle text fade */
 }
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content:center ;
 
-/* Button Styling */
-.btn-yellow {
-    background-color: #FFC247;
-    color: #02033B;
-    padding: 12px 24px;
-    border-radius: 100px;
-    text-decoration: none;
-    font-weight: 700;
-    display: inline-block;
-    margin: 10px;
-    transition: transform 0.2s;
-}
-.btn-outline {
-    background-color: transparent;
-    color: #02033B;
-    border: 2px solid #02033B;
-    padding: 12px 24px;
-    border-radius: 100px;
-    text-decoration: none;
-    font-weight: 700;
-    display: inline-block;
-    margin: 10px;
-    transition: background 0.2s;
 }
 
-.btn-yellow:hover {
-    background-color: #e6af3f;
+.btn-primary-custom {
+  display: inline-block;
+  padding: 15px 35px;
+  background: #FFC247;
+  color: #02033B;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
-.btn-outline:hover {
-    background-color: #02033B;
-    color: #fff;
+.btn-primary-custom:hover {
+  background: #e5ae40;
 }
+
+.btn-outline-custom {
+  display: inline-block;
+  padding: 15px 35px;
+  border: 2px solid #02033B;
+  color: #02033B;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  background: #02033B;
+  color: #fff;
+}
+
+
 /* ===== EXTRA SECTION START ===== */
 .extra-section {
     padding: 84px 0 !important;
