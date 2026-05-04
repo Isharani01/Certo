@@ -143,7 +143,7 @@ body {
 
 /* ================= HERO CONTAINER ================= */
 .hero-container {
-  /* Relative position zaroori hai taake ye ellipse ke upar layer ho */
+  
   position: relative; 
   z-index: 2; 
   max-width: 100%;
@@ -282,7 +282,7 @@ body {
     margin-top: 50px;
   }
 
-  /* Mobile par ellipse ka size adjust karein */
+  
   .hero-ellipse {
     width: 1000px;
     height: 1000px;
@@ -326,7 +326,7 @@ body {
 .reviews-row {
     display: flex;
     gap: 24px;
-    justify-content: flex-start; /* changed (important for slider) */
+    justify-content: flex-start; 
     align-items: stretch;
 }
 
@@ -382,7 +382,7 @@ body {
 }
 .about-title {
 
-  font-size: 38px; 
+  font-size: 30px; 
 
   font-family: 'Inter', sans-serif;
 
